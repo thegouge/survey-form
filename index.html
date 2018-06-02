@@ -17,18 +17,24 @@
 
     <form action="" id="survey-form">
         <label id="name-label" for="name">Name:</label>
-        <input type="text" id="name" placeholder="e.g. John Johnson" required>
+        <input type="text" id="name" placeholder="John Johnson" required>
+
+        <br>
 
         <label for="email" id="email-label">Email:</label>
-        <input type="email" id="email" placeholder="e.g. john.johnson@johnjohnson.john" required>
+        <input type="email" id="email" placeholder="john.johnson@johnjohnson.john" required>
+
+        <br>
 
         <label for="number" id="number-label">How many meals do you have a day?</label>
-        <input id="number" type="number" min="0" max="7" placeholder="e.g. johnson5">
+        <input id="number" type="number" min="0" max="7" placeholder="johnson5">
+
+        <br>
 
         <label for="dropdown">What's Your Favorite Food?</label>
         <select name="favorite" id="dropdown">
-            <option value="food" selected>A Food</option>
-            <option value="john">John</option>
+            <option value="john" selected>John Johnson</option>
+            <option value="food">A Food</option>
             <option value="pizza">Pizza</option>
             <option value="cookies">Cookies</option>
             <option value="broccoli">Broccoli</option>
@@ -39,37 +45,53 @@
             <option value="dunno">I dunno, Sushi?</option>
         </select>
 
+        <br>
+
         <label for="coffe-tea">Coffee or Tea?</label>
+        <br>
         <label for="coffee">
             <input type="radio" name="coffe-tea" id="coffee" value="0">Coffee
         </label>
+        <br>
         <label for="tea">
             <input type="radio" name="coffe-tea" id="tea" value="0">Tea
         </label>
 
-        <label for="eat">Check all that apply</label>
+        <br>
+
+        <label for="eat">Check all that apply:</label>
+        <br>
         <label for="alone">
             <input type="checkbox" name="eat" id="alone" value="alone"> Alone
         </label>
+        <br>
         <label for="company">
             <input type="checkbox" name="eat" id="company" value="company"> With Company
         </label>
+        <br>
         <label for="sad">
             <input type="checkbox" name="eat" id="sad" value="sad"> A Tub of Ice Cream while Watching Rom-Coms
         </label>
+        <br>
         <label for="love">
             <input type="checkbox" name="eat" id="love" value="love"> A Meal My Significant Other Cooked
         </label>
+        <br>
         <label for="ex">
             <input type="checkbox" name="eat" id="ex" value="ex"> A Meal My Significant Other
             <strong>Used</strong> to Cook
         </label>
+        <br>
         <label for="suzy">
             <input type="checkbox" name="eat" id="suzy" value="suzy"> Suzy you B****!
         </label>
 
+        <br>
+
         <label for="other">Are there any obscure food pairings you like?</label>
         <textarea name="alt-food" id="other" placeholder=""></textarea>
+
+        <br>
 
         <input type="submit" id="submit">
     </form>
