@@ -5,12 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lonk From Pennsylvania</title>
+    <title>Survey Form</title>
 
     <link rel="stylesheet" href="master.css">
 </head>
 
 <body>
+
+    <h1 id="title">What Food Do You Like?</h1>
+    <p id="description">A survey on all the food-based questions you could ask!</p>
+
+    <form action="" id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" placeholder="e.g. John Johnson" required>
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="e.g. john.johnson@johnjohnson.john" required>
+
+        <label for="number" id="number-label">How many meals do you have a day?</label>
+        <input id="number" type="number" min="0" max="7" placeholder="e.g. johnson5">
+
+        <label for="dropdown">What's Your Favorite Food?</label>
+        <select name="favorite" id="dropdown">
+            <option value="food" selected>A Food</option>
+            <option value="john">John</option>
+            <option value="pizza">Pizza</option>
+            <option value="cookies">Cookies</option>
+            <option value="broccoli">Broccoli</option>
+            <option value="pb">Peanut Butter</option>
+            <option value="tacos">Tacos</option>
+            <option value="nutella">Nutella</option>
+            <option value="poop">Poop</option>
+            <option value="dunno">I dunno, Sushi?</option>
+        </select>
+
+        <label for="coffe-tea">Coffee or Tea?</label>
+        <label for="coffee">
+            <input type="radio" name="coffe-tea" id="coffee" value="0">Coffee
+        </label>
+        <label for="tea">
+            <input type="radio" name="coffe-tea" id="tea" value="0">Tea
+        </label>
+
+        <label for="eat">Check all that apply</label>
+        <label for="alone">
+            <input type="checkbox" name="eat" id="alone" value="alone"> Alone
+        </label>
+        <label for="company">
+            <input type="checkbox" name="eat" id="company" value="company"> With Company
+        </label>
+        <label for="sad">
+            <input type="checkbox" name="eat" id="sad" value="sad"> A Tub of Ice Cream while Watching Rom-Coms
+        </label>
+        <label for="love">
+            <input type="checkbox" name="eat" id="love" value="love"> A Meal My Significant Other Cooked
+        </label>
+        <label for="ex">
+            <input type="checkbox" name="eat" id="ex" value="ex"> A Meal My Significant Other
+            <strong>Used</strong> to Cook
+        </label>
+        <label for="suzy">
+            <input type="checkbox" name="eat" id="suzy" value="suzy"> Suzy you B****!
+        </label>
+
+        <label for="other">Are there any obscure food pairings you like?</label>
+        <textarea name="alt-food" id="other" placeholder=""></textarea>
+
+        <input type="submit" id="submit">
+    </form>
 
     <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 </body>
