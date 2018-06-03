@@ -15,83 +15,86 @@
     <h1 id="title">What Food Do You Like?</h1>
     <p id="description">A survey on all the food-based questions you could ask!</p>
 
-    <form action="" id="survey-form">
-        <label id="name-label" for="name">Name:</label>
-        <input type="text" id="name" placeholder="John Johnson" required>
+    <form id="survey-form">
+        <div class="input-section">
+            <label class="main-label" id="name-label" for="name">Name:</label>
+            <input type="text" id="name" placeholder="John Johnson" required>
+        </div>
 
-        <br>
+        <div class="input-section grey">
+            <label class="main-label" for="email" id="email-label">Email:</label>
+            <input type="email" id="email" placeholder="john.johnson@johnjohnson.john" required>
+        </div>
 
-        <label for="email" id="email-label">Email:</label>
-        <input type="email" id="email" placeholder="john.johnson@johnjohnson.john" required>
+        <div class="input-section">
+            <label class="main-label" for="number" id="number-label">How many meals do you have a day?</label>
+            <input id="number" type="number" min="0" max="7" placeholder="johnson5">
+        </div>
 
-        <br>
+        <div class="input-section grey">
+            <label class="main-label" for="dropdown">What's Your Favorite Food?</label>
+            <select name="favorite" id="dropdown">
+                <option value="john" selected>John Johnson</option>
+                <option value="food">A Food</option>
+                <option value="pizza">Pizza</option>
+                <option value="cookies">Cookies</option>
+                <option value="broccoli">Broccoli</option>
+                <option value="pb">Peanut Butter</option>
+                <option value="tacos">Tacos</option>
+                <option value="nutella">Nutella</option>
+                <option value="poop">Poop</option>
+                <option value="dunno">I dunno, Sushi?</option>
+            </select>
+        </div>
 
-        <label for="number" id="number-label">How many meals do you have a day?</label>
-        <input id="number" type="number" min="0" max="7" placeholder="johnson5">
+        <div class="input-section">
+            <div class="subsection">
+                <label class="main-label" for="coffe-tea">Coffee or Tea?</label>
+                <label for="coffee">
+                    <input type="radio" name="coffe-tea" id="coffee" value="0">Coffee
+                </label>
+                <br>
+                <label for="tea">
+                    <input type="radio" name="coffe-tea" id="tea" value="0">Tea
+                </label>
+            </div>
+        </div>
 
-        <br>
+        <div class="input-section grey">
+            <div class="subsection">
+                <label class="main-label" for="eat">Check all that apply:</label>
 
-        <label for="dropdown">What's Your Favorite Food?</label>
-        <select name="favorite" id="dropdown">
-            <option value="john" selected>John Johnson</option>
-            <option value="food">A Food</option>
-            <option value="pizza">Pizza</option>
-            <option value="cookies">Cookies</option>
-            <option value="broccoli">Broccoli</option>
-            <option value="pb">Peanut Butter</option>
-            <option value="tacos">Tacos</option>
-            <option value="nutella">Nutella</option>
-            <option value="poop">Poop</option>
-            <option value="dunno">I dunno, Sushi?</option>
-        </select>
+                <label for="alone">
+                    <input type="checkbox" name="eat" id="alone" value="alone">I Eat Alone
+                </label>
+                <br>
+                <label for="company">
+                    <input type="checkbox" name="eat" id="company" value="company">I Eat With Company
+                </label>
+                <br>
+                <label for="sad">
+                    <input type="checkbox" name="eat" id="sad" value="sad">I Eat A Tub of Ice Cream while Watching Rom-Coms
+                </label>
+                <br>
+                <label for="love">
+                    <input type="checkbox" name="eat" id="love" value="love">I Eat A Meal My Significant Other Cooked
+                </label>
+                <br>
+                <label for="ex">
+                    <input type="checkbox" name="eat" id="ex" value="ex">I Eat A Meal My Significant Other
+                    <strong>Used</strong> to Cook
+                </label>
+                <br>
+                <label for="suzy">
+                    <input type="checkbox" name="eat" id="suzy" value="suzy"> Suzy you B****
+                </label>
+            </div>
+        </div>
 
-        <br>
-
-        <label for="coffe-tea">Coffee or Tea?</label>
-        <br>
-        <label for="coffee">
-            <input type="radio" name="coffe-tea" id="coffee" value="0">Coffee
-        </label>
-        <br>
-        <label for="tea">
-            <input type="radio" name="coffe-tea" id="tea" value="0">Tea
-        </label>
-
-        <br>
-
-        <label for="eat">Check all that apply:</label>
-        <br>
-        <label for="alone">
-            <input type="checkbox" name="eat" id="alone" value="alone"> Alone
-        </label>
-        <br>
-        <label for="company">
-            <input type="checkbox" name="eat" id="company" value="company"> With Company
-        </label>
-        <br>
-        <label for="sad">
-            <input type="checkbox" name="eat" id="sad" value="sad"> A Tub of Ice Cream while Watching Rom-Coms
-        </label>
-        <br>
-        <label for="love">
-            <input type="checkbox" name="eat" id="love" value="love"> A Meal My Significant Other Cooked
-        </label>
-        <br>
-        <label for="ex">
-            <input type="checkbox" name="eat" id="ex" value="ex"> A Meal My Significant Other
-            <strong>Used</strong> to Cook
-        </label>
-        <br>
-        <label for="suzy">
-            <input type="checkbox" name="eat" id="suzy" value="suzy"> Suzy you B****!
-        </label>
-
-        <br>
-
-        <label for="other">Are there any obscure food pairings you like?</label>
-        <textarea name="alt-food" id="other" placeholder=""></textarea>
-
-        <br>
+        <div class="input-section">
+            <label class="main-label" id="other-label" for="other">Are there any obscure food pairings you like?</label>
+            <textarea name="alt-food" id="other" placeholder=""></textarea>
+        </div>
 
         <input type="submit" id="submit">
     </form>
